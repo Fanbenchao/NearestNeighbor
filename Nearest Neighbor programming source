@@ -12,3 +12,5 @@ class NearestNeighbor:
       num_index = np.argmin(distence)
       Ypred[i] = self.ytr[num_index]
     return Ypred
+  #使用最近邻算法来区分图片种类，需要将所有的训练样本保存到计算机中，会占用大量的内存，
+  #分析算法可以知道，训练的复杂度为O(1),而测试的复杂度为O(n),这也是他的不足。
